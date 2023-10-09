@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+    <!-- addon -->
+    
+    </head>
+    <body>
+        
+        <!-- nav -->
+        
+        <nav>
+          <div class="navbar">
+              <div class="logo"><a href="#">The Education Jar</a></div>
+              <ul class="links">
+                  <li><a href="Home.html">Home</a></li>
+                  <li><a href="/Aboutus.html">About Us</a></li>
+                  <li><a href="/Courses.html">Courses</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+              </ul>
+              <a href="#" class="action_btn">Get Started</a>
+              <div class="toggle_btn">
+                <button id="changeStyles">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+          </div>
+  
+          <div class="dropdown_menu">
+              <li><a href="/Home.html">Home</a></li>
+              <li><a href="/Aboutus.html">About Us</a></li>
+              <li><a href="/Courses.html">Courses</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="#" class="action_btn">Get Started</a></li>
+          </div>
+  
+          <script>
+              const toggleBtn= document.querySelector('.toggle_btn')
+              const toggleBtnIcon= document.querySelector('.toggle_btn i')
+              const dropDownMenu= document.querySelector('.dropdown_menu')
+  
+          toggleBtn.onclick =function (){
+              dropDownMenu.classList.toggle('open')
+              const isOpen = dropDownMenu.classList.contains('open')
+  
+              toggleBtnIcon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars'
+          }
+         
+          </script>
+      </nav>
+    
+     
+
+
+            
+          
+          
+
+ <!-- MAin -->
+
+    <section class="Hero" >
+        <div class="container">
+              <!-- <h1>Courses we Offer</h1> -->
+            <div class="col">
+          
+              <div class="card-container">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="card">
+                  <h4>Bachelor of commerce (BCOM)</h4>
+                  <span class"chev">&rsaquo;</span>
+                </div>
+              </div>
+              
+              <div class="card-container">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="card">
+                  <h4>Bachelor of Business Administration (BBA)</h4>
+                  <span class"chev">&rsaquo;</span>
+                </div>
+              </div>
+              
+              <div class="card-container">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="card">
+                  <h4>Masters of Business Administration (MBA)</h4>
+                  <span class"chev">&rsaquo;</span>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="col">
+          
+              <div class="card-container">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="card">
+                  <h4>Bachelor of Computer Application (BCA)</h4>
+                  <span class"chev">&rsaquo;</span>
+                </div>
+              </div>
+              
+              <div class="card-container">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="card">
+                  <h4>Masters of Computer Application (MCA)</h4>
+                  <span class"chev">&rsaquo;</span>
+                </div>
+              </div>
+              
+              <div class="card-container">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="card">
+                   <h4>Masters of Commerce (MCOM)</h4>
+                  <span class"chev">&rsaquo;</span>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="col">
+          
+              <div class="card-container">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="card">
+                  <h4>Master of Arts in journalism & Mass Communication (MA JMC)</h4>
+                  <span class"chev">&rsaquo;</span>
+                </div>
+              </div>
+              
+              <div class="card-container">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="card">
+                  <h4>Bacholor of Arts (BA)</h4>
+                  <span class"chev">&rsaquo;</span>
+                </div>
+              </div>
+              
+              <div class="card-container">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="card">
+                  <h4>Masters of Arts (MA)</h4>
+                  <span class"chev">&rsaquo;</span>
+                </div>
+              </div> 
+              
+            </div>
+            
+          </div>
+    </section>
+             
+    <script>
+      const changeStylesButton = document.getElementById('changeStyles');
+const heroElement = document.querySelector('.Hero');
+
+// Add a click event listener to the button
+changeStylesButton.addEventListener('click', function () {
+// Add padding-top and margin-top to the Hero element
+heroElement.style.paddingTop = '250px';
+heroElement.style.marginTop = '250px';
+});
+     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+    
+     <footer class="footer-distributed">
+
+			
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a>
+
+                <a href="/Home.html">Home</a>
+
+                <a href="/Aboutus.html">About Us</a>
+
+                <a href="">Courses</a>
+
+                <a href="">Contact</a>
+            </p>
+
+            <p>The Education Jar &copy; 2023</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    
+</html>
